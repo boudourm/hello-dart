@@ -2,14 +2,16 @@
 
 main(List<String> arguments) { //entry point for execution
 
-  print(4 == 2);
+  int number = 34;
 
-  double pi = 3.14;
-  print(pi == pi);
+  print(number is String);
+  print(number is! String);
 
-  double gravity = 9.8;
-  print(pi <= gravity);
-
+  if(number != 34) {
+    print("If true, this will run! ");
+  }else {
+    print("Else running ! ");
+  }
 
 
 }
