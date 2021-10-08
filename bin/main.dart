@@ -3,9 +3,24 @@
 main(List<String> arguments) { //entry point for execution
 
   doSomething();
+
+  var name  = showName();
+  print(name);
 }
 
-doSomething(){
+bool isKnow(){
+  return true;
+}
+
+int showAge() {
+  return 34;
+}
+
+String showName() {
+  return "Hello from ShowName";
+}
+
+void doSomething(){
   print("Hello Functions!");
   sayMyName();
 }
