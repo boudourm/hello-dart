@@ -30,6 +30,14 @@ main(List<String> arguments) { //entry point for execution
   // print("$name $lastName is $age !");
   // print("Hello there $name ${lastName.toUpperCase()}");
 
-  int number
+  int number = 34;
+  int numberTow = 2;
+
+  double pi = 3.14;
+  double gravity = 9.8;
+
+  var result = number - numberTow;
+  print(gravity - pi);
+
 
 }
