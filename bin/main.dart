@@ -2,16 +2,22 @@
 
 main(List<String> arguments) { //entry point for execution
 
-  int number = 34;
+int number = 34;
+int numberTow = 2;
 
-  print(number is String);
-  print(number is! String);
+double pi = 3.14;
+double gravity = 9.8;
 
-  if(number != 34) {
-    print("If true, this will run! ");
-  }else {
-    print("Else running ! ");
-  }
+if(!(number != 100) || number >= 100) {
+  print("Not a hundred !");
+}else{
+  print("Yess!");
+}
 
+if(!(number != 100) && number >= 100) {
+  print("Not a hundred !");
+}else{
+  print("Yess!");
+}
 
 }
