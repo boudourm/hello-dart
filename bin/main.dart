@@ -7,12 +7,24 @@ class Microphone{
   late int model;
   late bool on = false;
 
+  //Contructors
   Microphone(this.name, this.color, this.model);
 
   Microphone.intialize(){
    this.name = "Blue Yeti 2nd Edition";
    this.model = 2022;
   }
+
+  //Getters & Setters
+  String get getName => name;
+  set setName(String name) => this.name=name;
+
+  String get getColor => color;
+  set setColor(String color) => this.color=color;
+
+  int get getModel => model;
+  set setModel(int model) => this.model=model;
+
 
   //Methods
   bool isOn() => on;
@@ -40,18 +52,10 @@ main(List<String> arguments) { //entry point for execution
   print(micSecond.name);
   print(micSecond.model);
 
+  micSecond.setName = "Brown Yeti";
 
-  var mic = new Microphone("Blue Yeti","blue",2021);
-  print(mic.model);
-  print(mic.name);
-  print(mic.color);
+  print(micSecond.getName);
 
-  mic.turnOn();
-  print("${mic.name} is on : ${mic.isOn()}");
-  mic.setVolume();
-  mic.turnOff();
-  print("${mic.name} is on : ${mic.isOn()}");
-  print(mic.modelNumber());
 
 
 }
