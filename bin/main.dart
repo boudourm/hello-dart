@@ -1,17 +1,36 @@
 
+class Person{
+  late String name;
+
+  Person(this.name);
+
+  @override
+  String toString() {
+    return 'Person{name: $name}';
+  }
+}
+
 
 main(List<String> arguments) { //entry point for execution
-  var list = [10, 2, 13, 24, 10, 56];
-  print(list[0]);
-  print(list[2]);
-  print(list[3]);
-  print(list.length);
-  print(list[list.length-1]);
-  for(int i=0; i<list.length;i++){
-    if(list[i]%2 == 0)
-      print("${list[i]} is multiple of 2.");
-    else
-      print("Index $i contains ${list[i]} and is not a multiple of 2.");
+
+  var onlyStrings = new List.empty(growable: true);
+  onlyStrings.add("Paulo");
+  onlyStrings.add("James");
+
+  var personsList = new List.empty(growable: true);
+  personsList.add(new Person("Mehdi"));
+  personsList.add(new Person("Reda"));
+  personsList.add(new Person("Yacine"));
+  personsList.add(new Person("Fairouz"));
+  personsList.add(new Person("Hakim"));
+
+  for(int i = 0; i<personsList.length; i++){
+    print(personsList[i]);
   }
+  for(int i =0; i< onlyStrings.length; i++){
+    print(onlyStrings[i]);
+  }
+
+
 
 }
