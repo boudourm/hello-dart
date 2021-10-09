@@ -10,6 +10,11 @@ class ElevatedLocation extends Location {
   ElevatedLocation(num lat, num lng) : super(lat, lng);
 
   ElevatedLocation.withElevation(num lat, num lng, this.elevation) : super(lat, lng);
+
+  @override
+  String toString() {
+    return 'Location{lat: $lat, lng: $lng, elevation: $elevation}';
+  }
 }
 
 main(List<String> arguments) { //entry point for execution
@@ -17,4 +22,5 @@ main(List<String> arguments) { //entry point for execution
   print("location=(${elevated.lat},${elevated.lng})");
   elevated = new ElevatedLocation.withElevation(65.45, 85.1, 456);
   print("location=(${elevated.lat},${elevated.lng},${elevated.elevation})");
+  print(elevated);
 }
