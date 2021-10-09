@@ -1,10 +1,16 @@
 
+var myOutsideVar = "Outside Var";
 
 main(List<String> arguments) { //entry point for execution
-  var name = "James";
-  var lastName = "Bond";
-  var age = 65;
-  print(sayHello(name, lastName, age));
-}
+  print(myOutsideVar);
+  myOutsideVar = "Hello world";
+  print(myOutsideVar);
 
-String sayHello(String name, String lastname,   int age) => "Hello $name $lastname $age years o.";
+  insideFunction() {
+    var agentName = "Bond";
+    myOutsideVar = "James";
+    print("From inside is : $myOutsideVar");
+  }
+
+  insideFunction();
+}
