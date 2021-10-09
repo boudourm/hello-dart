@@ -7,6 +7,8 @@ class Microphone{
   late int model;
   late bool on = false;
 
+  Microphone(this.name, this.color, this.model);
+
   //Methods
   bool isOn() => on;
 
@@ -29,11 +31,7 @@ class Microphone{
 
 main(List<String> arguments) { //entry point for execution
 
-  var mic = new Microphone();
-  mic.color = "blue";
-  mic.model = 2021;
-  mic.name = "Blue Yeti";
-
+  var mic = new Microphone("Blue Yeti","blue",2021);
   print(mic.model);
   print(mic.name);
   print(mic.color);
