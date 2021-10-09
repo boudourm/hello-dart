@@ -8,12 +8,12 @@ main(List<String> arguments) { //entry point for execution
   print(name);
 }
 
+int showAge() => 34;
+
+String getName() => "James Bond";
+
 bool isKnow(){
   return true;
-}
-
-int showAge() {
-  return 34;
 }
 
 String showName() {
