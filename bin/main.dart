@@ -9,6 +9,11 @@ class Microphone{
 
   Microphone(this.name, this.color, this.model);
 
+  Microphone.intialize(){
+   this.name = "Blue Yeti 2nd Edition";
+   this.model = 2022;
+  }
+
   //Methods
   bool isOn() => on;
 
@@ -30,6 +35,11 @@ class Microphone{
 }
 
 main(List<String> arguments) { //entry point for execution
+
+  var micSecond = Microphone.intialize();
+  print(micSecond.name);
+  print(micSecond.model);
+
 
   var mic = new Microphone("Blue Yeti","blue",2021);
   print(mic.model);
