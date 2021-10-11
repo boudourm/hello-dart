@@ -1,4 +1,4 @@
-#Intoduction to Dart
+# Intoduction to Dart
 
 A Dart command line project to introduce you to dart. it is my solution to the lab work following the course : [Flutter & Dart - The Complete Flutter App Development Course](https://www.udemy.com/course/flutter-dart-the-complete-flutter-app-development-course)
 
